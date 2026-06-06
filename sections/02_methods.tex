@@ -1,0 +1,56 @@
+%!TEX root = ../main.tex
+
+\section{Methods}
+
+\subsection{Search and Study Selection}
+This systematic review uses the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) as a guideline. We performed an extensive search of scientific databases, namely Scopus, Web of Science (WoS), PsycINFO, and PubMed, using complex queries constructed with Boolean operators. The search strategy was designed to intersect four core dimensions: target mental health conditions and psychological states (e.g., mental disorders, depression, anxiety), consumer technologies and sensing paradigms (e.g., wearables, smartphones, ubiquitous computing, passive sensing), external context and environmental factors (e.g., physical location, ambient light, social proximity, device usage), and intervention delivery mechanisms (e.g., Ecological Momentary Interventions [EMI], Just-in-Time Adaptive Interventions [JITAI], therapy). Furthermore, the search was explicitly restricted to English-language journal articles and conference papers within relevant subject areas (Medicine, Computer Science, Psychology, and Social Sciences). All database-specific queries were semantically equivalent but formulated using the different syntaxes and technical support of the respective search engines. All resulting publications were downloaded, and duplicates were removed. We conducted the initial screening of titles, abstracts, and keywords against the inclusion and exclusion criteria (IC/EC) using ASReview, an open-source, AI-assisted screening tool developed by Utrecht University and trusted by leading organizations. Subsequently, papers that remained inconclusive were fully reviewed to check their eligibility using the IC/EC.
+
+\subsection{Eligibility Criteria}
+
+To guarantee a highly specific collection of scientific articles related to the goals of the current systematic review, clear IC/EC criteria have been defined. Such criteria are meant to identify studies that adequately connect consumer-grade pervasive computing, contextual sensing from the environment, and adaptive mental health interventions.
+
+\subsubsection*{Inclusion Criteria (IC)}
+
+An article was considered eligible if the following requirements were met:
+
+\begin{itemize}
+    \item \textbf{IC1 (Target Population and Outcomes):} The research addresses individuals affected by mental health conditions (depression, anxiety, PTSD, bipolar disorder, etc.) or investigates interventions aiming to improve psychological well-being.
+    
+    \item \textbf{IC2 (Technological Platform):} The study leverages consumer-grade ubiquitous computing technologies, such as smartphones, smartwatches, fitness trackers, smart rings, or any other of devices suitable for enviromental sensing.
+    
+    \item \textbf{IC3 (Environmental Contextualization):} The study integrates contextual data from the surrounding environment that can be used as a guide of an interventional decision.
+    
+    \item \textbf{IC4 (Type of Publication):} We accepted peer-reviewed journal articles or conference proceedings written in English.
+\end{itemize}
+
+\subsubsection*{Exclusion Criteria (EC)}
+
+An article was deemed ineligible if any of the following criteria were fulfilled:
+
+\begin{itemize}
+    \item \textbf{EC1 (Off-Target Outcomes):} The study mainly investigates physical health issues (diabetes monitoring, physical therapy, cardiovascular health) without evaluating psychological outcomes.
+    
+    \item \textbf{EC2 (Non-Ubiquitous/Stationary Technology):} The study utilizes exclusively stationary, clinical-grade or non-ubiquitous medical instruments (fMRI, polysomnography, clinical-grade EEG).
+    
+    \item \textbf{EC3 (Internal/Physiological Measures Only):} The study exclusively uses internal physiological measures (HRV, EDA, blood pressure, etc.) or EMAs not correlated to any external sensors.
+    
+    \item \textbf{EC4 (Ineligible Publications):} A paper is secondary literature (systematic review, meta-analysis), a book chapter, an editorial, an abstract-only source, or a protocol article that does not report empirical findings.
+\end{itemize}
+
+\subsection{Classification of Studies}
+
+In order to conduct a thorough examination concerning how much consideration was given to environmental factors in the chosen mental health intervention research studies, the contextual factors identified were then grouped according to a taxonomy. Even though the classification framework is based on the theoretical framework of Han et al. \cite{han2008contextaware} that divides context into physical (environmental real-world features), internal (internal user-related features), and social (human interaction-based) aspects, the following classification framework emphasizes the use of external sensing alone. In particular, the context used in the papers under analysis was classified based on the technical aspects involved and the context obtained. This led to the identification of the following three categories of context:
+
+\begin{itemize}
+    \item \textbf{Physical and Environmental Context:} This class represents any metric that refers to the user's actual physical and tangible environment as well as geospatial movement. Examples of variables belonging to this category are location and movement data such as geolocation (GPS data), location entropy, environmental lighting, temperature, meteorological measurements, and air quality data.
+    
+    \item \textbf{Social Context:} Metrics from this class represent variables related to the user's social engagement, proximity network or level of socialization. Typical variables from this category refer to physical proximity to other people (based on Bluetooth/Wi-Fi connection detection), the user's acoustical environment and environmental noise, voice and speech metrics (mostly prosodic, not semantic), and communication metrics (call log, SMS frequency).
+    
+    \item \textbf{Computing and Temporal Context:} This class includes measures referring to the user's computer usage and temporal rhythms in the usage patterns. Variables belonging to this category may include phone telemetry data (such as accelerometer data, etc.), application-specific usage statistics, screen-on/screen-off durations, system notification management, and temporal behavior modeling (e.g., day/night cycle, day of the week, etc.)
+\end{itemize}
+
+The goal of the classification into these three classes is to demonstrate the current capability of the technology and indicate which environmental aspects are most commonly used to trigger adaptive interventions.
+
+\subsection{Data and Software Availability.}
+
+For transparency and reproducibility, we published the resulting data, code, and instructions on GitHub (San Francisco, California) and archived the work in Zenodo. The GitHub repository includes a literate programming document that combines text, data preprocessing, analysis, and visualizations.

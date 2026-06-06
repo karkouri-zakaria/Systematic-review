@@ -1,0 +1,43 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multicol}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18} % Use your current installed version
+
+\usepackage{abstract}
+\setlength{\absleftindent}{0mm}
+\setlength{\absrightindent}{0mm}
+
+\title{\textbf{The Role of Context-aware Technological Devices and External Context in Mental Health Interventions: A Systematic Review}}
+\author{Zakaria Karkouri, Sven Casteleyn, Carlos Granell Canut}
+\date{May 2026}
+
+\begin{document}
+
+\maketitle
+
+\input{sections/00_abstract.tex}
+
+\vspace{1em}
+\noindent \textbf{Keywords:} Context-aware computing, Mental health, Ecological Momentary Interventions (EMI), Wearable technology, External sensing.
+\vspace{2em}
+
+\begin{multicols}{2}
+\input{sections/01_introduction.tex}
+\input{sections/02_methods.tex}
+\input{sections/03_results.tex}
+%\input{sections/04_discussion.tex}
+%\input{sections/05_other_info.tex}
+\end{multicols}
+
+\clearpage
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}
