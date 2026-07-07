@@ -3,57 +3,94 @@
 \section{Results}
 
 The synthesis of the $120$ included studies highlights the operational landscape of context-aware digital mental health interventions through five primary research queries: [cite: 12]
-\begin{enumerate}
-    \item Which specific mental health conditions have been prioritized by context-aware interventions over time, and what hardware platforms are deployed to target them?
-    \item What specific data collection mechanisms are utilized to capture context, and is the field succeeding in reducing user burden through passive sensing?
-    \item How evenly balanced is the tracking of user context across physical, social, and computing domains, and what does this reveal about algorithmic intervention triggers?
-    \item What parameters are researchers actively evaluating when validating these context-aware platforms, and does the focus lie on technical execution or therapeutic value?
-    \item How are psychological theories translated into these context-aware platforms, and does the methodological design of the studies support clinical efficacy or merely technical feasibility?
+\begin{enumerate}   
+    \item What mental health conditions are targeted by context-aware interventions, and which hardware platforms are used to deliver them?
+    \item What types of contextual data are captured by these interventions?
+    \item What methods and sensing modalities are used to collect this data?
+    \item How is the collected data processed and utilized to deliver the interventions?
+    \item What specific mechanisms are utilized to execute the interventions?
+    \item What is the distribution of study designs, and which evaluation metrics are assessed?
 \end{enumerate}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{sections/charts/Diagram.png}
+\end{figure}
 
-% ---------------------------------------------------------
-\subsection{The Cross-Section of Clinical Targets and Hardware Deployment}
+ a% ---------------------------------------------------------
+\subsection{Target Conditions and Hardware Platforms}
 An analysis of the historical data reveals a sharp post-2020 acceleration in the literature, with research efforts heavily clustered around high-prevalence internalizing disorders like depression and anxiety. [cite: 12] 
 
-\end{multicols}
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{sections/charts/DisordersDevicesHisto.pdf}
     \caption{Joint longitudinal distribution of included papers categorized by targeted mental disorders and deployed hardware platforms.}
     \label{fig:disorders_devices}
 \end{figure}
-\begin{multicols}{2}
+
+Analysis of data trends revealed a significant increase in the number of studies following the year 2020 with the focus of research activities directed towards highly prevalent forms of internalizing disorders, such as depression and anxiety. As can be seen from Figure~\ref{fig:disorders_devices}, the number of publications steadily increased since 2020-2021, coinciding with the start of the coronavirus pandemic, with annual production increasing fourfold to reach a maximum between 2022 and 2024. While our papers collection stops in February 2026.
+
+Referring to specific health issues under study, depressive and anxiety disorders get the largest share of papers throughout the entire span of analysis, with this trend supported by disorder frequency statistics presented in the inset pie chart. Other classes of conditions; namely Substance Use Disorders (SUD/Addictive), Trauma- and Stressor-Related Disorders (TSRD), Neurodevelopmental Disorders (NDD), and Bipolar Disorder; make up significantly lower shares and are found in the scientific literature mostly following 2019, thus indicating that context-aware intervention strategies are just starting to branch out into non-prevalent internalizing disorders. Conditions of Suicidal Ideation (SI), Feeding/Eating, Sleep-Wake, and Somatic Symptom Disorders (SSD) appear scarcely represented in the examined timeframe.
+
+As for hardware platforms employed, mobile phones make up the main technological substrate in use every year due to their accessibility and variety of available sensors. Wearable wrist bands occupy the second place on the list of platforms; however, their prevalence grows noticeably from 2020 onwards, likely owing to the general growth of consumer market demand for devices such as smartwatches and fitness trackers. The third group comprises tablets and displays, which are used occasionally. Specialized/clinical devices, XR technologies, and proximity sensors are rarely employed in the field.
 
 % ---------------------------------------------------------
-\subsection{Technical Modalities:}
+\subsection{Captured Contextual Data:}
 To minimize user interaction friction, modern intervention architectures increasingly rely on background diagnostic logging to establish context. [cite: 14]
 
-\end{multicols}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{sections/charts/Sunburst1.pdf}
+    \includegraphics[width=1\textwidth]{sections/charts/bubbleChart.pdf}
+    \label{fig:bubble_matrix}
+\end{figure}
+
+In order to minimize interaction cost, the architecture of contemporary interventions is being optimized to use background diagnostic logging to create a context awareness. As seen from the Context Mapping in Figure~\ref{fig:bubble_matrix}, the distribution of contextual variables among 120 included interventions remains rather biased with Computing Context accounting for the majority of captured contextual factors (65\% of all contextual variables), Physical Context (18\%) and Social Context (17\%).
+
+Speaking of Computing Context, the most prominent subcategory is In-App Telemetry (APP) making up to 38\%, followed by Task Completion metrics (TSK -- 25\%), Micro-Temporal patterns (MIC -- 20\%) and Macro-Timeline behavioral rhythms (MAC -- 18\%). Such an overwhelming focus on computational and behavioral data could be explained by easy accessibility of native data streams as well as low instrumentational burden imposed on the user.
+
+In terms of Physical Context, the most utilized subcategories include Mobility and Movement data (MOB -- 28\%) and Semantic Context (SEM -- 26\%) followed by Absolute Geolocation (ABS -- 19\%) and Ambient Environment data (AMB -- 14\%). Activity and Routine (ACT -- 11\%) is represented by a slightly smaller portion of data, Virtual and Simulated environments (VIR -- 2\%) by a tiny minority of XR-based interventions.
+
+Peer and Community signals (PEER -- 35\%) and Communication metrics (COM -- 25\%) prevail within the Social Context domain along with Clinical or Coach support indicators (CLIN -- 21\%). The least significant subcategory is represented by Physical Proximity sensors (PROX -- 19\%) typically used via Bluetooth/Wi-Fi scanning. Privacy and instrumentation issues could explain their underrepresentation.
+
+From the bubble matrix above (Figure~\ref{fig:bubble_matrix}), one can deduce that adaptive therapy/user support is the most popular application area of contextual data followed by healthcare manager support and learning algorithms that make use of a limited subset of contextual signals such as APP, MIC and MOB subcategories.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{sections/charts/DualSunburst.pdf}
     \caption{Distribution of technical data collection modalities across active and passive sensing mechanisms.}
     \label{fig:technical_modalities}
 \end{figure}
-\begin{multicols}{2}
+
 
 % ---------------------------------------------------------
-\subsection{Deconstructing the "Why" Gap:}
-A significant imbalance persists between internal computing telemetry and external environmental factors, leaving contextual trigger frameworks blind to real-world situational causes. [cite: 5, 41, 42]
-
-\end{multicols}
+\subsection{Inerventions mechanisms and classifcation}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{sections/charts/Sunburst2.pdf}
-    \caption{Hierarchical breakdown mapping the extracted studies across physical, social, and computing context domains.}
-    \label{fig:why_gap}
+    \includegraphics[width=0.85\textwidth]{sections/charts/mechanismClassificationStacked.pdf}
+    \caption{Distribution of intervention mechanisms stacked by operational classification.}
+    \label{fig:intervention_mechanisms_stacked}
 \end{figure}
-\begin{multicols}{2}
+
+As evident from Figure~\ref{fig:intervention_mechanisms_stacked}, there is considerable variation in both co-occurrence frequencies and operational characteristics among the six identified intervention mechanisms. This variation reveals a clear structural divide between automated and human-mediated delivery architectures. The classifications shown in the figure describe how intervention delivery is operationalized: \textit{Active} interventions involve direct modification of treatment through user or clinician actions within the application, \textit{Passive} interventions operate automatically without requiring user engagement, and \textit{Hybrid} interventions combine automated detection with subsequent human involvement.
+
+The most frequently occurring mechanism of intervention found in all the studied articles is the \textit{Triggered} interventions that rely on pre-defined rules for automatic delivery of alerts, prompts or recommendations depending on whether certain contextual conditions have been met. It is the most frequently occurring mechanism out of the six and is mostly associated with the Passive category, which suggests that most of the context-based interventions are delivered automatically, without any effort of the users' side. Only a few examples of the Triggered interventions fall into the category of Hybrid, while the Active interventions are almost not used at all.
+
+The second most common mechanism is \textit{Algorithmic}. Unlike simple rule-based triggering, Algorithmic interventions employ dynamic decision logic, predictive models, or machine learning algorithms to analyze continuously collected contextual information and adapt intervention delivery accordingly. Similar to Triggered interventions, Algorithmic approaches are heavily concentrated within the Passive classification, reflecting the prevalence of automated decision-making systems that operate with minimal human involvement.
+
+In contrast, \textit{Dashboard}-based interventions are characterized by a predominance of Active classifications. Dashboard mechanisms provide clinicians, healthcare professionals, or care managers with visual representations of aggregated patient data that support clinical review and decision-making. The Active nature of these interventions reflects the requirement for a human actor to interpret the information presented and determine whether intervention adjustments are necessary.
+
+A comparable trend is observed for \textit{Manual} interventions. These mechanisms involve healthcare staff or study personnel actively monitoring participant information and initiating contact or support when appropriate. Although Manual interventions occur less frequently than Dashboard-based approaches, they also exhibit a strong tendency toward the Active classification because intervention delivery depends primarily on human judgment and action.
+
+\textit{Escalated} interventions possess their own unique set of characteristics, where most are classified as being a Hybrid type. In such systems, an automated monitoring process constantly checks preset thresholds or risks, triggering an alarm whenever the criteria for intervention are met. Nevertheless, rather than implementing interventions directly, the system leaves the task to a doctor, who then decides on the appropriate course of action.
+
+Finally, \textit{User-driven} interventions represent the least frequent mechanism and are exclusively associated with the Active classification. These interventions depend on participants intentionally interacting with the system to access support, initiate activities, or request assistance. As intervention initiation is entirely dependent on user action and does not involve automated background processes, User-driven approaches are inherently Active.
+
+Overall, the results suggest a bimodal structure of intervention design. One pole is represented by passive and highly automated approaches, primarily embodied by the Triggered and Algorithmic mechanisms, where intervention delivery occurs with little or no human involvement. The opposite pole consists of active and human-mediated approaches, represented by Dashboard, Manual, and User-driven interventions, all of which rely on human judgment or participant engagement. Escalated interventions occupy an intermediate position, combining automated detection with human oversight and therefore bridging the two delivery paradigms.
 
 % ---------------------------------------------------------
-\subsection{The Evaluation Outcomes Matrix}
-% Place text here expanding on Acceptability, Usability, Clinical Efficacy, and Engagement metrics.
-
-% ---------------------------------------------------------
-\subsection{Methodological Maturity and Therapeutic Translation}
-% Place text here expanding on the distribution of RCTs, pilots, and specific psychotherapy models like CBT.
+\subsection{Studies Designs and Evaluation Metrics}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{sections/charts/EMSTDheatmap.pdf}
+    \caption{Distribution of study designs and evaluation metrics.}
+    \label{fig:metrics_designs_heatmap}
+\end{figure}
