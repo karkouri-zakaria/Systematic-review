@@ -1,24 +1,19 @@
 %!TEX root = ../main.tex
 
 \section{Results}
+\subsection{Study Inclusion}
+Figure XXX shows the results of the systematic process to identify, screen, assess, and select studies for inclusion according to the PRISMA guidelines. 
 
-The synthesis of the $120$ included studies highlights the operational landscape of context-aware digital mental health interventions through five primary research queries: [cite: 12]
-\begin{enumerate}   
-    \item What mental health conditions are targeted by context-aware interventions, and which hardware platforms are used to deliver them?
-    \item What types of contextual data are captured by these interventions?
-    \item What methods and sensing modalities are used to collect this data?
-    \item How is the collected data processed and utilized to deliver the interventions?
-    \item What specific mechanisms are utilized to execute the interventions?
-    \item What is the distribution of study designs, and which evaluation metrics are assessed?
-\end{enumerate}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.95\textwidth]{sections/charts/Diagram.png}
-\end{figure}
+During the identification phase, XXXX studies from the four different Web-based sources (Scopus, Web of Science (WoS), PsycINFO, and PubMed, using com), which we reduced to YYY after removing duplicates. After initial screening (based on title and abstract), we retained ZZZ articles. The eligibility assessment (based on full article) resulted in a final set of 120 papers. More details can be found in Figure XXX.
 
- a% ---------------------------------------------------------
+
+\subsection{Study Characteristics}
+
+Presenting all eligible papers in the form of a table to summarize main characteristics + citation them is mandatory.
+
+ % ---------------------------------------------------------
 \subsection{Target Conditions and Hardware Platforms}
-An analysis of the historical data reveals a sharp post-2020 acceleration in the literature, with research efforts heavily clustered around high-prevalence internalizing disorders like depression and anxiety. [cite: 12] 
+Figure \ref{fig:disorders_devices} shows the distribution of research over time, sub-classified according to technological platforms used and mental disorders addressed. 
 
 \begin{figure}[H]
     \centering
@@ -27,11 +22,11 @@ An analysis of the historical data reveals a sharp post-2020 acceleration in the
     \label{fig:disorders_devices}
 \end{figure}
 
-Analysis of data trends revealed a significant increase in the number of studies following the year 2020 with the focus of research activities directed towards highly prevalent forms of internalizing disorders, such as depression and anxiety. As can be seen from Figure~\ref{fig:disorders_devices}, the number of publications steadily increased since 2020-2021, coinciding with the start of the coronavirus pandemic, with annual production increasing fourfold to reach a maximum between 2022 and 2024. While our papers collection stops in February 2026.
+Overall, the number of publications sharply increased since 2020-2021, coinciding with the start of the coronavirus pandemic, with peaks in 2021 and 2025 (note that 2026 is incomplete). Research efforts are heavily clustered around high-prevalence internalizing disorders, particularly depression and anxiety (66,0\% combined), whose relevant proportion remained equal after the 2020-2021 increase. Other disorders, particularly Substance Use Disorders (SUD/Addictive), Somatic Symptoms Disorder (SSD), Sleep-Wake Disorders and Bipolar Disorder are already sporadically addressed before 2020, with a further increase in their coverage and branching out into other mental disorders since 2020.
+%Other classes of conditions, namely Substance Use Disorders (SUD/Addictive), Trauma- and Stressor-Related Disorders (TSRD), Neurodevelopmental Disorders (NDD), and Bipolar Disorder, make up significantly smaller shares, and are found in increasing amount since 2020, thus indicating that context-aware intervention strategies are just starting to branch out into non-prevalent internalizing disorders. 
+Conditions of Suicidal Ideation (SI), Feeding/Eating, Sleep-Wake, and Somatic Symptom Disorders (SSD) appear scarcely represented in the examined timeframe.
 
-Referring to specific health issues under study, depressive and anxiety disorders get the largest share of papers throughout the entire span of analysis, with this trend supported by disorder frequency statistics presented in the inset pie chart. Other classes of conditions; namely Substance Use Disorders (SUD/Addictive), Trauma- and Stressor-Related Disorders (TSRD), Neurodevelopmental Disorders (NDD), and Bipolar Disorder; make up significantly lower shares and are found in the scientific literature mostly following 2019, thus indicating that context-aware intervention strategies are just starting to branch out into non-prevalent internalizing disorders. Conditions of Suicidal Ideation (SI), Feeding/Eating, Sleep-Wake, and Somatic Symptom Disorders (SSD) appear scarcely represented in the examined timeframe.
-
-As for hardware platforms employed, mobile phones make up the main technological substrate in use every year due to their accessibility and variety of available sensors. Wearable wrist bands occupy the second place on the list of platforms; however, their prevalence grows noticeably from 2020 onwards, likely owing to the general growth of consumer market demand for devices such as smartwatches and fitness trackers. The third group comprises tablets and displays, which are used occasionally. Specialized/clinical devices, XR technologies, and proximity sensors are rarely employed in the field.
+As for hardware platforms employed, mobile phones constitute the technological substrate for the overwhelming majority of interventions, due to their omnipresence, accessibility and their variety of available sensors. Wrist-worn wearables occupy the second place on the list of platforms; however, their prevalence grows noticeably from 2020 onwards, likely owing to the general growth of consumer market demand for devices such as smartwatches and fitness trackers. The third group comprises tablets and displays, which are used occasionally. Specialized/clinical devices, XR technologies, and proximity sensors are rarely employed in the field.
 
 % ---------------------------------------------------------
 \subsection{Captured Contextual Data:}
@@ -94,3 +89,9 @@ Overall, the results suggest a bimodal structure of intervention design. One pol
     \caption{Distribution of study designs and evaluation metrics.}
     \label{fig:metrics_designs_heatmap}
 \end{figure}
+
+Figure~\ref{fig:metrics_designs_heatmap} provides an overview of the types of study designs and evaluation metrics used in the selected literature. According to the results of the analysis, Pilot and Feasibility study designs were the most common ones among the considered articles ($n = 49$; 43.8\% of classified studies). Experimental Randomized Controlled Trials (RCTs) came second in terms of prevalence ($n = 40$; 35.7\%). Formative and Design studies ($n = 12$; 10.7\%) and Observational or Quasi-experimental studies ($n = 11$; 9.8\%) were relatively uncommon.
+
+As far as evaluation metrics are concerned, the following criteria proved to be the most popular ones among researchers. First, Acceptability and Feasibility measures appeared in all Pilot and Feasibility studies ($n = 49$) and in many RCTs ($n = 33$; 82.5\%) and Observational studies ($n = 9$; 81.8\%). Second, Clinical Efficacy and Effectiveness, and User Engagement and Adherence were widely applied criteria in RCTs ($n = 38$; 95.0\% and $n = 35$; 87.5\%, respectively) and Observational studies ($n = 10$; 90.9\% and $n = 11$; 100\%, respectively). However, Usability and UX evaluation criteria were limited to Pilot and Feasibility ($n = 36$; 73.5\%) and Formative and Design studies ($n = 7$; 58.3\%) and relatively unpopular in RCTs ($n = 18$; 45.0\%) and Observational studies ($n = 2$; 18.2\%).
+
+Thus, one can clearly observe a certain division of the methodology used. The former focuses on user-centered interaction design and feasibility, and the latter stresses clinical and engagement measures.
