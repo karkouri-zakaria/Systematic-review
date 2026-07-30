@@ -7,3 +7,5 @@
 *.fdb*
 main.pdf
 main.synctex.gz
+*.xlsx
+*.ipynb*
