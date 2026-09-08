@@ -6,145 +6,17 @@
 % Item 23a & 23b
 
 \subsubsection{Interpretation of Historical data}
-The temporal and categorical distributions reveal a research domain characterized by rapid macro-level development alongside considerable methodological homogenization. In terms of system-level interventions, there is a tendency to use standard mobile phone sensors to detect or monitor internalizing disorders, namely, depressive and anxiety disorders. Such a focus implies obvious structural gaps in the exploration of hardware paradigms and more complex psychological conditions.
 
-
-\paragraph{Macro Trends and Temporal Inflection Points}
-The longitudinal distribution of publications from 2015 to 2026 reflects the trends of developing technology characterized by noticeable inflections in 2021 and 2025.
-\begin{itemize} 
-    \item \textbf{The COVID-19 Catalyst (2021):} The increased number of published articles in 2021 (8 publications) can be regarded as the prompt reaction of scholars to the COVID-19 pandemic that increased the problem of mental health disorders and promoted the development of remote and digitalized monitoring methods thus increasing the attractiveness of passive sensing technologies in clinical research.
-    \item \textbf{The 2025 Peak:} The largest number of articles was published in 2025 (9 papers) and can be interpreted as the maturity of initiatives undertaken due to the pandemic. It happened against the background of broad adoption of advanced machine learning algorithms, deep representation learning, and language models (LLMs).
-    \item \textbf{Data Temporal Boundary:} The apparent decrease in the number of publications in 2026 is likely the result of the incomplete data collecting period and not reduced scientific interest in the subject matter.
-\end{itemize}
-
-\paragraph{The Device Monoculture: Ubiquity vs. Fidelity Trade-offs}
-As illustrated by the aggregate device metrics, the current literature suffers from an extreme reliance on Mobile Phones ($72.4\%$).
-\begin{itemize}
-    \item \textbf{The Convenience Bias:} Mobile devices offer unparalleled, low-friction access to continuous passive sensing metrics (e.g., GPS mobility features, keyboard dynamics, screen-dwell time) while facilitating seamless Ecological Momentary Assessment (EMA) deployments. This ubiquity drives their dominance in the literature.
-    \item \textbf{The Wearable and XR Deficit:} Despite massive consumer market penetration, Wrist-Worn Wearables account for a meager $15.5\%$ of the corpus, while Immersive Technology (XR) configurations remain statistically negligible. This reveals a critical technical bottleneck: while wearables provide high-fidelity, continuous physiological signals (e.g., heart rate variability, electrodermal activity, sleep architecture), computer science and IT researchers consistently favor the low-friction deployment of smartphone software over the data pipeline complexities and highly restrictive API ecosystems of proprietary wearable commercial setups.
-
-    \item \textbf{The Convenience Bias:} Due to continuous access to behavioral data (GPS mobility, communication, keystrokes, screen, Ecological Momentary Assessment (EMA)), smartphones' ubiquity, low cost of using, and high user's familiarity with them, smartphones become a dominant platform for clinical trials on mental conditions.
-    \item \textbf{The Wearable and XR Deficit:} Although wearables and immersive technologies are quite popular among consumers, there are only $15.5\%$ of papers on wearables and no paper on immersive technologies (XR). It can be explained by the dominance of the convenience preference over the richness of physiological data offered by wearables (heart rate variability, electrodermal activity, sleep monitoring, etc.).
-\end{itemize}
- 
-\paragraph{Diagnostic Bias: Operational Feasibility vs. Complex Pathologies}
-The diagnostic taxonomy within the observed literature is heavily skewed, with Depressive Disorders ($51.9\%$) and Anxiety Disorders ($13.5\%$) commanding nearly two-thirds of the total research output.
-\begin{itemize}
-    \item \textbf{Digital Phenotyping Alignment:} Depression and anxiety manifest through clear behavioral shifts, such as social withdrawal, psychomotor retardation, and sleep fragmentation, that map cleanly onto consumer smartphone sensor logs (e.g., location variance, communication frequencies). They represent the path of least resistance for baseline algorithmic validation.
-    \item \textbf{The Neglect of Severe Mental Illness (SMI):} Complex conditions such as Schizophrenia Spectrum Disorders (SSD, $5.8\%$) and Substance Use Disorders (SUD, $5.8\%$) remain chronically underrepresented. SMIs often introduce highly cyclical longitudinal fluctuations, lower data compliance, and complex ethical or privacy hurdles that complicate the training, validation, and deployment of standard passive sensing models.
-\end{itemize}
-
-\paragraph{Co-Evolutionary Stagnation and Strategic Imperatives}
-An analysis of the annual stacked distributions reveals that the historical introduction of novel hardware modalities does not inherently broaden diagnostic targets. When alternative frameworks like Tablets \& Displays or Specialized/Clinical systems emerge in the timeline (e.g., 2020, 2024), they are consistently mapped back onto the baseline targets of Depression and Anxiety. The technical community is largely applying newer hardware architectures to established, low-risk diagnostic targets rather than using advanced sensing capabilities to unlock hard-to-track disorders.
-
-Consequently, the field faces a looming \textit{generalizability crisis}. Because $72.4\%$ of existing classification and predictive models rely fundamentally on legacy smartphone interaction paradigms (e.g., typing metrics, screen wakes), these digital biomarkers face immediate obsolescence if user interaction layers transition toward ambient voice interfaces or smart eyewear. Moving forward, computer science and IT researchers must prioritize multimodal orchestration frameworks that seamlessly bridge the gap between abstract mobile interaction logs and continuous, wearable physiological telemetry.
 
 % ---------------------------------------------------------
 
 \subsubsection{Interpretation of Contextual data}
-The multidimensional architectural landscape detailed in the context mapping analysis (\texttt{ContextMapping.png}) reveals significant structural siloing, a heavy hegemony of application-layer telemetry, and a distinct operational gap in how physical and social contexts are translated into clinical interventions. Rather than demonstrating a unified, multimodal sensing paradigm, the field exhibits highly partitioned development tracks depending on the underlying context domain.
 
-\paragraph{The Software Telemetry Hegemony: Computational Context Dominance}
-The mapping demonstrates an overwhelming concentration of data points within the Computational Context domain (TSK, MIC, MAC, APP), particularly concentrated under the ``How'' modalities of \textbf{In-App Tracking} (yielding frequencies of 33, 17, 21, and 44) and \textbf{System / Backend Data}. 
-\begin{itemize}
-    \item \textbf{The App-Centric Bias:} Researchers heavily favor high-level software abstractions over low-level hardware instrumentation. Capturing user interaction paradigms inside an application (e.g., In-App Tracking for APP at 44) represents a low-friction deployment strategy that bypasses the operating system-level permissions and battery-drain constraints inherent to continuous hardware sensing.
-    \item \textbf{Temporal Granularity Granulation:} The micro-temporal (MIC) and macro-timeline (MAC) tracking clusters are heavily bound to software interaction cycles rather than environmental or physiological rhythms, introducing an inherent structural bias toward active screen-time metrics over ambient state detection.
-\end{itemize}
-
-\paragraph{Methodological Siloing and the Physical-Computational Divide}
-A stark binary division exists between the execution mechanics of Physical Context (SEM, MOB, AMB, ACT, ABS) and Computational Context.
-\begin{itemize}
-    \item \textbf{Isolated Localization Tracks:} Physical context relies almost exclusively on traditional radio and inertial frameworksspecifically \textbf{GPS / WiFi} (notably driving absolute geolocation [ABS] at 9 and mobility [MOB] at 9) and \textbf{Motion / Accelerometer} sensing. 
-    \item \textbf{The Cross-Pollination Deficit:} Crucially, there is a total absence of cross-pollination; physical context features drop to zero representation under In-App Tracking, System / Backend Data, and Prompts / Reminders. This indicates that modern architectures fail to fuse environmental factors with live software interaction states, treating user location and app interaction as entirely decoupled data streams.
-\end{itemize}
-
-\paragraph{The Social Context Sensing Bottleneck}
-Social Context (PROX, PEER, COM, CLIN) remains the least automated and most heavily bottlenecked layer within current systems.
-\begin{itemize}
-    \item \textbf{Reliance on Explicit Modalities:} Social interaction sensing relies primarily on \textbf{Self-Report / EMA / Input} (PEER at 7) or direct communication features like \textbf{Passive Logs / Metadata} (COM at 8) and \textbf{Direct Contact (SMS/Call)} (CLIN at 5).
-    \item \textbf{The Ambient Proximity Gap:} True automated, ambient social capture via hardware sensors (such as Bluetooth Low Energy proximity sensing or continuous audio clustering) is virtually missing. The framework illustrates that social context is still largely inferred through explicit, user-initiated digital communications rather than real-world co-presence algorithms.
-\end{itemize}
-
-\paragraph{Functional Asymmetry in Clinical Interventions (``What For'')}
-When analyzing how these sensing mechanisms map to design goals, a clear functional asymmetry emerges under the \textbf{Adaptive Therapy} and \textbf{Healthcare Manager Support} axes.
-\begin{itemize}
-    \item \textbf{Telemetry-Driven Interventions:} The structural logic driving Adaptive Therapy is disproportionately governed by Computational Context (APP at 17, MIC at 12) over Physical Context (ABS at 5, ACT at 2). 
-    \item \textbf{Architectural Implications:} This reveals that current clinical decision support engines and closed-loop algorithmic interventions are triggered by \textit{how} a user navigates an application dashboard or software ecosystem, rather than \textit{where} they are geographically or \textit{how} they are behaving physically in their environment.
-\end{itemize}
-
-\paragraph{Critical Constraints for System Design}
-From an engineering standpoint, this mapping exposes a critical generalizability challenge for context-aware computing frameworks. By building the majority of intervention logic on application-layer telemetry (In-App Tracking), the underlying models become completely dependent on specific app architectures and interface designs. To build resilient digital health systems, future research must shift away from this insular app telemetry and develop unified middleware capable of dynamically fusing hardware-level physical sensing with passive social graph extraction.
-
-% ---------------------------------------------------------
-
-\subsubsection{Interpretation of mechanisms and classification}
-The distribution of intervention mechanisms stacked by their operational classification reveals a stark structural polarization within the literature. The architecture of modern digital health interventions exhibits a binary division: fully automated, hands-off background loops on one end, and highly manual, human-dependent interfaces on the other. This cross-tabulation highlights critical design trends regarding how systems balance automation with human-in-the-loop oversight.
-
-\paragraph{The Reactive Paradigm: Dominance of Passive Triggers}
-The absolute dominance of the \textbf{Triggered} mechanism (16 co-occurrences), which is overwhelmingly driven by \textbf{Passive} classification (13 occurrences), underscores a fundamentally reactive architectural paradigm. 
-\begin{itemize}
-    \item \textbf{Threshold-Driven Logic:} Rather than maintaining a continuous, collaborative dialogue with the user, current systems are designed as latent safety nets. They rely on background passive telemetry (e.g., smartphone sensors or wearable streams) to quietly monitor the user until a pre-defined risk or behavioral threshold is crossed, which then forces an automated alert or intervention.
-    \item \textbf{The Risk of Alert Fatigue:} While computationally efficient, this heavy reliance on passive triggering introduces a major clinical risk of alert fatigue. If the underlying predictive models yield high false-positive rates, frequent unprompted interventions can alienate the user, leading to app abandonment.
-\end{itemize}
-
-\paragraph{Algorithmic Inflexibility and the Lack of Interactive AI}
-A striking pattern is the complete homogeneity of the \textbf{Algorithmic} mechanism (9 co-occurrences), which is 100\% classified under the \textbf{Passive} domain.
-\begin{itemize}
-    \item \textbf{Unidirectional Optimization:} This total absence of Active or Hybrid classifications within algorithmic frameworks indicates a lack of interactive or adaptive machine learning models. Current algorithms consume background digital phenotyping data and output decisions unilaterally.
-    \item \textbf{The Human-In-The-Loop Deficit:} This reveals a missed opportunity for co-adaptive systems. Modern architectures rarely allow real-time user feedback to dynamically recalibrate or override running algorithmic models, representing a significant technical gap in personalized, interactive AI.
-\end{itemize}
-
-\paragraph{The Localization of Active Control: Dashboards and Manual Labor}
-Conversely, active human control is strictly localized within the \textbf{Dashboard} (6 co-occurrences) and \textbf{Manual} (5 co-occurrences) mechanisms, which are heavily dominated by the \textbf{Active} classification.
-\begin{itemize}
-    \item \textbf{The Visualization Bottleneck:} Dashboards function primarily as active interfaces (5 occurrences), requiring users or clinicians to intentionally log in, interpret charts, and self-initiate therapeutic actions. 
-    \item \textbf{Cognitive Load Imbalance:} This clustering demonstrates that when data synthesis or clinical decision-making is required, systems completely withdraw automated support. Instead of leveraging hybrid intelligence to scaffold the decision-making process, the cognitive load is shifted entirely back to the human agent, creating an operational bottleneck for overworked clinicians and symptomatic patients.
-\end{itemize}
-
-\paragraph{Escalation as the Sole Frontier for Hybrid Architecture}
-The \textbf{Hybrid} classification (5 total occurrences) is almost exclusively confined to the \textbf{Escalated} mechanism (4 occurrences), with only a minor appearance in Triggered (1 occurrence).
-\begin{itemize}
-    \item \textbf{Risk-Stratified System Design:} This concentration reveals a highly logical, risk-stratified architectural rule across the literature: hybrid sensing and control are reserved almost exclusively for high-risk triage scenarios. 
-    \item \textbf{Operational Workflow:} In these architectures, passive detection serves as the entry point, but the system transitions to an active, collaborative state (requiring human validation or escalating to a clinical coach) when severe decompensation is predicted. While this ensures safety during crises, it leaves routine, day-to-day interventions without the nuanced benefit of hybrid (combined active and passive) context awareness.
-\end{itemize}
-
-\paragraph{Design Implications for Future Frameworks}
-For context-aware computing and digital therapeutics to mature, system designers must break this binary polarization. The current field splits into passive/algorithmic backends and active/manual frontends. Future architectures should intentionally explore the empty design spaces highlighted by this chartspecifically \textit{hybrid algorithmic frameworks} and \textit{passive dashboard tracking}. Integrating active user feedback directly into passive algorithmic loops will create more resilient, bidirectional systems that reduce clinical burden while maximizing user autonomy.
 
 % ---------------------------------------------------------
 
 \subsubsection{Interpretation of study designs and evaluation metrics}
-The cross-tabulation matrix illustrates how researchers validate digital health interventions by mapping evaluation metrics against study designs. The distribution reveals a mature yet highly conventional evaluation landscape, characterized by an intense concentration on rigorous pilot testing and a sharp division between preliminary formative studies and full-scale clinical trials.
 
-\paragraph{The Validation Stronghold: Pilot and Feasibility Supremacy}
-The data highlights that \textbf{Pilot \& Feasibility} designs ($n=20$) serve as the methodological backbone of this domain, generating the highest concentrations across all metrics, culminating in 20 co-occurrences for \textbf{Acceptability \& Feasibility} and 12 co-occurrences for \textbf{Usability \& UX}.
-\begin{itemize}
-    \item \textbf{Exploratory Maturity:} This heavy clustering indicates a field that prioritizes safety, operational viability, and baseline user satisfaction before transitioning to large-scale deployment. Researchers utilize pilot phases extensively to uncover technical friction points and ensure patient safety.
-    \item \textbf{Multimodal Evaluation Strategies:} The uniform distribution of high frequencies across Pilot \& Feasibility studiesspanning Usability (12), Engagement (15), Clinical Efficacy (16), and Acceptability (20) demonstrates that pilot stages are rarely single-faceted; they are designed as comprehensive, multi-objective validation checkpoints.
-\end{itemize}
-
-\paragraph{The Translational Peak: High-Stakes Clinical Efficacy}
-When evaluating full clinical validity through \textbf{Experimental (RCT)} designs ($n=14$), the evaluation focus undergoes a distinct strategic shift toward long-term behavioral and medical outcomes.
-\begin{itemize}
-    \item \textbf{Prioritizing Clinical over Technical:} In RCT environments, metrics like \textbf{Clinical Efficacy \& Effectiveness} (14) and \textbf{User Engagement \& Adherence} (12) command the highest focus. Conversely, \textbf{Usability \& UX} drops significantly to 6 co-occurrences.
-    \item \textbf{Architectural Maturity Inference:} This drop implies that by the time an architecture reaches the gold-standard RCT phase, technical usability issues are treated as solved problems. The evaluation paradigm shifts completely from evaluating *how* the software operates to validating *whether* the digital intervention delivers a statistically significant therapeutic effect.
-\end{itemize}
-
-\paragraph{The Formative and Design Phase Disconnect}
-A stark infrastructural gap appears in the \textbf{Formative \& Design} phase ($n=5$), which exhibits remarkably low co-occurrences with core development metricsspecifically yielding only 4 for Usability \& UX, and a meager 1 for both User Engagement and Clinical Efficacy.
-\begin{itemize}
-    \item \textbf{Lack of Upstream User-Centered Design:} This deficit reveals that formal, structured user-centered design frameworks are underutilized during early ideation and system architecture specification. 
-    \item \textbf{Downstream Evaluation Burden:} Because usability and engagement are not exhaustively evaluated or co-designed in the formative stage, the burden of discovering design flaws is pushed downstream into the Pilot \& Feasibility phase. This is an inefficient software engineering lifecycle practice, as modifying core intervention workflows during a pilot study is significantly more resource-intensive than fixing them during a formative design phase.
-\end{itemize}
-
-\paragraph{The Marginalization of Observational and Real-World Evidence}
-\textbf{Observational / Quasi-Experimental} study designs ($n=3$) represent the least utilized validation methodology in the literature, maintaining low, flat numbers across all metrics (ranging from 0 to 3).
-\begin{itemize}
-    \item \textbf{The Real-World Deployment Gap:} This marginalization indicates a lack of post-deployment evaluation. While the field is highly proficient at evaluating platforms within controlled experimental bubbles (RCTs and pilots), it lacks longitudinal studies that track how these systems behave when deployed "in the wild" without artificial academic or clinical oversight.
-\end{itemize}
-
-\paragraph{Engineering Recommendations for Future Frameworks}
-To build more balanced research pipelines, the digital therapeutics community must reallocate evaluation efforts across the software engineering lifecycle. First, researchers should increase formal \textbf{Formative \& Design} studies to catch engagement and usability flaws before software architectures are finalized. Second, to complement the heavy volume of controlled \textbf{RCTs}, future research must invest in \textbf{Observational} designs to validate whether digital biomarkers and therapeutic compliance models remain accurate when subjected to the unstructured variations of real-world patient routines.
 
 % ---------------------------------------------------------
 
