@@ -7,16 +7,47 @@
 
 \subsubsection{Interpretation of Historical data}
 
+The sharp rise in publications after 2020–2021 (Figure \ref{fig:disorders_devices}) reflects the twofold impact of the COVID-19 pandemic: driving a global surge in psychological distress and accelerating worldwide demand for scalable, contactless remote health technologies. The disruption of traditional, in-person clinical research during this period pushed the field toward opportunistic sensing and mobile health systems, explaining the sustained high publication output through mid-decade.
+
+The pronounced focus on Depressive and anxiety disorders is largely driven by their high global epidemiological prevalence and the strong alignment of affective symptoms with established passive digital biomarkers, such as reduced spatial mobility (GPS entropy), altered sleep-wake rhythms, and changes in device interaction. Conversely, the underrepresentation of conditions like NDD, bipolar disorder, SI, and TSRD is primarily due to significant ethical and safety constraints, particularly regarding immediate crisis response protocols for suicidal behavior, as well as the complexity of modeling highly episodic or clinically heterogeneous psychiatric conditions without constant clinical oversight. Meanwhile, work targeting Sleep-Wake, Substance Use, Somatic Symptoms, and Feeding/Eating Disorders highlights emerging application areas where physiological and behavioral monitoring provides immediate diagnostic value.
+
+The hardware preferences observed in Figure \ref{fig:disorders_devices} highlight practical deployment trade-offs. Smartphones maintain their dominance due to their widespread consumer availability and their rich, multimodal array of built-in sensors suitable for continuous, unobtrusive Ecological Momentary Assessment (accelerometers, light sensors, phone-use logs). Tablets serve a distinct second-largest role, primarily driven by structured, clinician-guided settings or cognitive testing tasks requiring larger interactive displays. Interestingly, wrist-worn wearables account for a smaller share than consumer market trends might suggest, which stems from methodological challenges in academic protocols such as battery constraints, proprietary data extraction pipelines, and participant adherence. Finally, specialized and clinical sensors remain limited in scope due to high procurement costs, lack of platform interoperability, and low ecological feasibility for free-living monitoring.
 
 % ---------------------------------------------------------
 
 \subsubsection{Interpretation of Contextual data}
 
+The distribution mapped in the Context Mapping matrix (Figure~\ref{fig:bubble_matrix}) reflects practical trade-offs between sensing feasibility, clinical relevance, and system constraints.
+
+The heavy concentration on in-app telemetry and micro-temporal tracking stems from the technical accessibility of native software logging, which requires minimal user involvement and imposes no additional battery strain. These signals are directly compatible with Device-side Automation, supporting local, low-latency processing while eliminating the need for external API calls and continuous cloud synchronization.
+
+In the physical domain, mobility metrics are heavily favored because movement entropy and life-space mobility have been widely validated as passive biomarkers of changes in mental health. In contrast, environmental variables, such as ambient light and audio, are used more selectively because continuous acoustic and environmental monitoring increases battery consumption and raises privacy concerns.
+
+Within the social domain, passive communication metadata and localized proximity scanning provide unobtrusive proxies for social interaction and isolation. Conversely, clinical and coach support metrics are the least captured passively and remain unmapped as direct "What For" target context variables. This reflects strict ethical boundaries and governance frameworks, where human-in-the-loop clinical intervention is delivered via direct contact (n = 11) or crisis escalation rather than continuous passive tracking.
+
+Synthesizing these dimensions (Figure~\ref{fig:bubble_matrix}) reveals a unified architectural pipeline connecting context acquisition directly to therapeutic delivery. Taken together, these findings demonstrate a clear design paradigm: modern platforms leverage background device-side automation to transform low-friction computational and physical telemetry into real-time context models, directly driving Just-In-Time Adaptive Interventions (JITAIs) while preserving user privacy and system efficiency.
+
+% ---------------------------------------------------------
+
+\subsubsection{Interpretation of study mechanisms and classifcation}
+
+Rather than relying on isolated delivery modes, contemporary interventions increasingly operate along a continuum of automation and human involvement (Figure~\ref{fig:intervention_mechanisms_stacked}). The prominence of Active triggered interventions reflects a design shift where automated rules do not merely deliver quiet background modifications, but actively prompt users to complete momentary exercises, verify context, or engage in timely behavioral reflection.
+
+Across the multi-faceted profiles observed in Figure~\ref{fig:intervention_mechanisms_stacked}, the operational distribution of Algorithmic interventions highlights how machine learning and predictive models are increasingly utilized not only for silent backend parameter tuning (Passive), but also for generating real-time, user-facing recommendations that demand intentional participant action (Active) or clinical triage (Hybrid). For Dashboards, the balanced split across modes reflects their evolution from passive patient-monitoring panels into active decision-support interfaces and hybrid collaborative tools. For Manual strategies, it captures workflows ranging from direct clinician outreach (Active) to automated protocol logging (Passive) and co-managed clinical interventions (Hybrid).
+
+Similarly, escalation architectures inherently bridge continuous automated risk detection (Passive) with structured clinical decision pipelines (Hybrid) and direct emergency interventions (Active) when safety thresholds are breached. In contrast, the isolated occurrence of purely User-driven interventions indicates that contemporary architectures rarely rely on modules operating independently of background sensing or automated triggering.
+
+Overall, these findings reveal the flexibility of digital health intervention design. Rather than relying on strictly automated or manual approaches, modern interventions use active, passive, and hybrid delivery modes according to the clinical context and the level of human oversight required. Rule-based, algorithmic, dashboard, and manual mechanisms can all be adapted to these different delivery paradigms.
 
 % ---------------------------------------------------------
 
 \subsubsection{Interpretation of study designs and evaluation metrics}
 
+The strong concentration of research within pilot and feasibility frameworks (Figure~\ref{fig:metrics_designs_heatmap}) reflects the evolving nature of sensing-based digital health interventions, where investigators must establish protocol viability, technical reliability, and preliminary adherence before deploying resource-intensive clinical trials.
+
+The cross-tabulation across evaluation metrics reveals distinct methodological priorities tailored to study maturity. Acceptability and feasibility measures serve as a foundational evaluation layer across nearly all designs, while clinical efficacy and effectiveness naturally constitutes the primary outcome measure in confirmatory trial designs. Furthermore, the high emphasis on user engagement and adherence in observational studies, RCTs, and pilot studies indicates that continuous interaction tracking becomes particularly relevant during prolonged participant engagement.
+
+Conversely, Usability \& UX metrics display an inverse pattern, concentrating heavily in human-centered design phases before declining in importance during late-stage evaluation. Synthesizing these co-occurrence patterns reveals a distinct two-phase evaluation pipeline: early-stage formative and pilot research prioritizes human-computer interaction, interface usability, and operational feasibility, whereas mature RCTs and observational studies transition focus toward validating therapeutic efficacy, clinical outcomes, and long-term user retention.
 
 % ---------------------------------------------------------
 
