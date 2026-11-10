@@ -3,7 +3,11 @@
 \section{Results}
 \label{sec:results}
 
-\subsection{Study Inclusion}
+% % PRISMA items 16a and 16b
+\subsection{Study Selection}
+
+Figure~\ref{fig:flow_chart} summarizes the study identification, screening, and inclusion.
+The database searches retrieved 16,319 records: 5,368 from Scopus, 5,260 from Web of Science, 4,123 from PubMed, and 1,568 from APA PsycInfo. After removing 7,874 duplicates, 8,445 records remained for title, abstract, and keyword screening. We excluded 8,259 records at this stage, and we sought retrieval of the remaining 186 articles; we retrieved all and assessed them in full text. Of these, 144 were excluded because they did not meet one or more inclusion criteria: IC1, targeted disorders (n = 96); IC2, mobile mental health intervention (n = 31); IC3, external contextualization (n = 13); and IC4, type of publication (n = 4). Finally, 40 studies were included in the review.
 
 \begin{figure}[H]
     \centering
@@ -12,86 +16,142 @@
     \label{fig:flow_chart}
 \end{figure}
 
-(Figure~\ref{fig:flow_chart}) shows the results of the systematic process to identify, screen, assess, and select studies for inclusion according to the PRISMA guidelines. 
-
-During the identification phase, 16319 studies were retrieved from the four different Web-based sources (Scopus, Web of Science (WoS), PsycINFO, and PubMed, using com), which we reduced to 8445 after removing duplicates. After initial screening (based on title and abstract), we retained 187 articles. The eligibility assessment (based on full-text review) resulted in a final set of 42 papers. More details can be found in Figure~\ref{fig:flow_chart}).
-
-
+% PRISMA item 17 (and possible some statements on items 18, 19, 21, 22)
 \subsection{Study Characteristics}
 
-Table~\ref{tab:included_studies} summarizes the 42 eligible studies included in this review along with their publication details and citations.
+Table~\ref{tab:context_studies} lists the 40 eligible studies included in this review, coded on the six review dimensions.
 
-\input{sections/PapersTable.tex}
+% Publication years 
+The volume of eligible studies was low until 2019 (one to five studies per year), increased from 2020 onward, and peaked in 2025 (8 studies), with 7 studies each in 2021 and 2024; no eligible study was published in 2022. Because the search was run in February 2026, the count for 2026 covers only part of the year.
+
+Table~\ref{tab:context_studies} groups the included studies by the external context they used. Nearly all studies (38; 95.0\%) used computing and temporal context, most often in-app telemetry (26 studies; 65.0\%) and task completion (17; 42.5\%). Social context was used in 13 studies (32.5\%) and physical context in 11 (27.5\%), most often communication (6) and mobility and movement (7), respectively. 
+
+%\input{sections/table-studies}
+
+\input{sections/table-grouping}
+
+
 
  % ---------------------------------------------------------
-\subsection{Target Conditions and Hardware Platforms}
-Figure \ref{fig:disorders_devices} shows the distribution of research over time, sub-classified according to technological platforms used and mental disorders addressed.
+ % PRISMA item 20 -- Q1
+\subsection{Target Mental Disorders (Q1)}
+
+The eligible studies addressed nine mental health conditions and category groupings, with some studies targeting more than one (50 disorder instances identified in total across 40 studies). Research focused mainly on depressive disorders alone (18, 45.0\%), followed by studies addressing anxiety and depressive disorders together (6, 15.0\%). Consequently, depression was a primary focus in 3 out of every 5 studies (24, 60.0\%). The next two disorders were far less frequent, lagging well behind depression: sleep-wake disorders (4, 10.0\%) and feeding and eating disorders (3, 7.5\%). Somatic symptom and related disorders (2, 5.0\%), substance-related and addictive disorders (2, 5.0\%), and neurodevelopmental disorders (2, 5.0\%) each represented a minor share. Trauma- and stressor-related disorders (1, 2.5\%) and suicidal ideation (1, 2.5\%) were the least represented. Figure~\ref{fig:disorders_devices} shows the distribution of targeted disorders over time.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.95\textwidth]{sections/charts/DisordersDevicesHisto.pdf}
-\caption{Joint longitudinal distribution of included papers categorized by targeted mental disorders and deployed hardware platforms.}
+\caption{Number of included studies per publication year, by targeted mental disorder (left bar of each pair) and technology platform (right bar). Pie charts show the share of disorder assignments ($n = 50$) and platform assignments ($n = 53$). No eligible study was published in 2022.} %Joint longitudinal distribution of included papers categorized by targeted mental disorders and deployed hardware platforms.}
 \label{fig:disorders_devices}
 \end{figure}
 
-Overall, the volume of publications increased sharply since 2020–2021 in an upward trend, showing peaks in 2021 (8 papers) and 2025 (9 papers).
 
-Regarding target disorders, the distribution centers predominantly on internalizing conditions, with Depressive Disorders (51.9\%) and anxiety disorders (13.5\%) collectively accounting for 65.4\% of all studies. In contrast, conditions such as Neurodevelopmental Disorders (NDD, 3.8\%), bipolar disorder (1.9\%), Suicidal Ideation (SI, 1.9\%), and Trauma- and Stressor-Related Disorders (TSRD, 1.9\%) remain underrepresented. The remaining literature addresses Sleep-Wake disorders (7.7\%), Substance Use (5.8\%), Somatic Symptoms (5.8\%), and Feeding/Eating Disorders (5.8\%).
 
-From a hardware perspective, mobile phones dominate the research landscape at 72.4\%, followed by tablets (15.5\%), wrist-worn wearables (6.9\%), and proximity sensors (5.2\%).
+% PRISMA item 20 -- Q2
+\subsection{Technology Platforms (Q2)}
 
-% ---------------------------------------------------------
-\subsection{Captured Contextual Data:}
-To minimize participant burden and interaction costs, intervention architectures increasingly rely on passive sensing to establish contextual awareness.
+As shown in Figure~\ref{fig:disorders_devices}, four types of technology platforms were identified, with 52 platform assignments across the 40 studies. As expected according to IC2, all 40 studies (100.0\%) used mobile phones, with 30 studies (75.0\%) relying exclusively on them. Overall, tablets were used in six studies (15.0\%), wrist-worn wearables in four studies (10.0\%), and positioning sensors in two studies (5.0\%). The additional devices therefore always complemented, rather than replaced, the smartphone. Among the 10 studies (25.0\%) that combined mobile phones with secondary devices, eight used a single additional device --tablets (5, 12.5\%), wrist-worn wearables (2, 5.0\%), or positioning sensors (1, 2.5\%)-- while two incorporated multi-device combinations (1, 2.5\% combining tablets with wrist-worn wearables, and 1, 2.5\% combining wrist-worn wearables with positioning sensors).
+
+% PRISMA item 20 -- Q3
+\subsection{External Context Types (Q3)}
+\label{sec:results:q3}
+
+%To minimize participant burden and interaction costs, intervention architectures increasingly rely on passive sensing to establish contextual awareness.
+
+The unit of analysis in this and next sections \ref{sec:results:q4} and \ref{sec:results:q5} is a \emph{context instance}: a coded link between an external context subcategory (the labels for the marks in \textit{What?} axis Figure~\ref{fig:bubble_matrix}) and either the technique used to capture it (\textit{how?}) or the purpose for which it was used in the intervention (\textit{what for?}). Figure~\ref{fig:bubble_matrix} shows how each context instance is mapped into the three main categories (see Section~\ref{sec:methods:data-items}): \textit{what} contextual variables are captured (external context types), \textit{how} they are technologically acquired (capturing techniques), and \textit{what for} they are used, in reference to their purpose within clinical intervention. Each main category corresponds to an axis. In total, we identified 379 context instances: 205 capture techniques (\textit{how?} axis) and 174 intervention purposes (\textit{what for?} axis). To analyze the type of external context, each context instance, referred to as the \textit{what?} axis, is counted twice: once based on how it was captured (right-hand side of the figure) and once based on how it was used (left-hand side of the figure). Both sets of instances are presented separately below.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{sections/charts/bubbleChart.pdf}
+\caption{Contextual instances by context categories and subcategory (\textit{what}), capture technique (\textit{how}), and intervention purpose (\textit{what for}).}
 \label{fig:bubble_matrix}
 \end{figure}
 
-As illustrated in the Context Mapping matrix (Figure~\ref{fig:bubble_matrix}), this contextual framework is organized around three core dimensions: What contextual variables are captured, How they are technologically acquired, and What For they are used, referring to their functional clinical objective. Across 291 mapped contextual instances, including 223 context acquisition mechanisms (How) and 68 intervention objectives (What For), the distribution centers primarily on software-level indicators. Computational Context accounts for 56.0\% of all instances (n = 163), followed by Physical Context (24.4\%, n = 71) and Social Context (19.6\%, n = 57).
+%As illustrated in the Context Mapping matrix (Figure~\ref{fig:bubble_matrix}), this contextual framework is organized around three core dimensions: What contextual variables are captured, How they are technologically acquired, and What For they are used, referring to their functional clinical objective. Across 399 mapped contextual instances, including 223 context acquisition mechanisms (How) and 176 intervention objectives (What For), the distribution centers primarily on software-level indicators. 
 
-Within the Computational Context domain (n = 163; 123 collection mechanisms and 40 intervention targets), In-App Telemetry constitutes the largest single subcategory, accounting for 60 data points (45 mechanisms and 15 targets; 36.8\% of the domain). This is followed by Micro-Temporal patterns with 39 data points (27 mechanisms, 12 targets; 23.9\%), Task Completion metrics with 36 data points (29 mechanisms, 7 targets; 22.1\%), and Macro-Timeline behavioral rhythms with 28 data points (22 mechanisms, 6 targets; 17.2\%).
+Across all three categories of external context shown in Figure~\ref{fig:bubble_matrix}, computing and temporal context accounted for the majority of instances (222 of 379; 117 capture techniques and 105 intervention purposes; 58.6\%), followed by social context (79: 43 and 36; 20.8\%) and physical context (78: 45 and 33; 20.6\%).
 
-Regarding Physical Context (n = 71, including 53 collection mechanisms and 18 intervention targets), research effort focuses on Mobility \& Movement data, which represents 32 data points (24 mechanisms and 8 targets; 45.1\% of the domain), primarily captured via GPS/Geofencing (n = 28) and Bluetooth sensors (n = 11). The remaining physical subcategories occupy smaller proportions: Semantic Context (14 data points; 9 mechanisms, 5 targets; 19.7\%), Absolute Geolocation (13 data points; 11 mechanisms, 2 targets; 18.3\%), and Ambient Environment data (12 data points; 9 mechanisms, 3 targets; 16.9\%).
+Within the computing and temporal context (222 instances), in-app telemetry was the largest subcategory (82 instances; 36.9\%; 44 capture techniques and 38 intervention purposes), followed by task completion metrics (53; 23.9\%; 28 and 25), micro-temporal patterns (45; 20.3\%; 23 and 22), and macro-timeline patterns (42; 18.9\%; 22 and 20).
 
-In the Social Context domain (n = 57; 47 collection mechanisms and 10 intervention targets), Communication metrics predominate with 22 data points (17 mechanisms and 5 targets; 38.6\% of the domain). This is followed by Physical Proximity sensors (16 data points; 13 mechanisms, 3 targets; 28.1\%), Peer / Community signals (13 data points; 11 mechanisms, 2 targets; 22.8\%), and Clinical / Coach Support indicators (6 data points; 6 mechanisms, 0 targets; 10.5\%).
+Regarding physical context (78 instances), research effort focused largely on the mobility and movement subcategory (36 instances; 46.2\%; 20 capture techniques and 16 intervention purposes), followed by semantic context (17; 21.8\%; 9 and 8), ambient environment (15; 19.2\%; 9 and 6), and absolute geolocation (10; 12.8\%; 7 and 3).
 
-On the functional target side (What For), Adaptive Therapy represents the primary objective (28 data points; 41.2\%), followed by Healthcare Manager Support (25 data points; 36.8\%), Learning Algorithms (10 data points; 14.7\%), and general User Support (5 data points; 7.4\%). On the technical execution side, the How\ subsection {Intervention} (n = 84; 37.7\% of mechanisms) functions as the primary delivery backbone.
+Within the social context (79 instances), communication metrics were the largest subcategory (30 instances; 38.0\%; 17 capture techniques and 13 intervention purposes), followed by peer/community signals (20; 25.3\%; 11 and 9), physical positioning sensors (16; 9 and 7; 20.3\%), and clinical/coach support indicators (13; 16.5\%; 6 and 7).
+
+\todo{Summary paragraph pending}
+
+% PRISMA item 20 -- Q4
+\subsection{Context-Capturing Techniques (Q4)}
+\label{sec:results:q4}
+
+Eleven of the twelve capture techniques defined in the Methods were observed; VR/AR headsets were not used in any study. Across the 205 instances referred to capture techniques (Figure~\ref{fig:bubble_matrix}, \textit{how?} axis), device-side automation (e.g., background usage tracking and metadata) was by far the most frequent technique (78 instances; 38.0\%). It was followed by GPS/geofencing (24; 11.7\%), in-app tracking and telemetry (24; 11.7\%), online usage tracking (18; 8.8\%), self-report (18; 8.8\%), direct contact and prompts (11; 5.4\%), microphone/audio recordings (8; 3.9\%), motion/accelerometer data (8; 3.9\%), Bluetooth sensing (7; 3.4\%), Wi-Fi network logging (5; 2.4\%), and light sensors (4; 2.0\%).
+
+%primarily captured via GPS/Geofencing (n = 28) and Bluetooth sensors (n = 11). 
+
+\tbc{Confirm Active/Passive classification (as similarly used below in Q6) can also be applied to capture techniques; If so, add/define it in the Methods} Grouping the techniques by the user's involvement, passive techniques that run without user action (all except self-report and direct contact and prompts—the two rightmost columns in Figure~\ref{fig:bubble_matrix}) accounted for 176 instances (85.9\%), whereas active techniques requiring user input accounted for 29 instances (14.1\%).
+
+\todo{Description of capture techniques per type of external context (colors). Any relevant info to stress out? For example, device-side automation is intensively used in computational context, compared to the other two types. Are there techniques that are quite common in one type of context, and not in the others...}
+
+\todo{Summary paragraph pending}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{sections/charts/DualSunburst.pdf}
-    \caption{Distribution of technical data collection modalities across active and passive sensing mechanisms.}
+    \caption{Hierarchical view of context instances. Left: context category/type, subcategory (\textit{what?}), and capture technique (\textit{how?}). Right: context category/type, capture technique, and subcategory (\textit{what?}). Segment size is proportional to the number of instances.}
     \label{fig:technical_modalities}
 \end{figure}
 
+% PRISMA item 20 -- Q5
+\subsection{Use/Purpose of External Context in Interventions (Q5)}
+\label{sec:results:q5}
 
-% ---------------------------------------------------------
-\ subsection {Intervention mechanisms and classification}
+Of the 174 instances between context and intervention purpose (\textit{What For?} axis in Figure~\ref{fig:bubble_matrix}), user support (e.g., psycho-education, self-management tools) was the most frequent purpose (99 context instances; 56.9\%), followed by adaptive therapy (40; 23.0\%), healthcare provider support (29; 16.7\%), and learning algorithms (6; 3.4\%). %On the technical execution side, Device-side Automation (n = 78; 38.0\% of mechanisms) functions as the primary delivery backbone.
+Most user-support context instances came from computing and temporal context; in-app telemetry alone was linked to user support 26 times. Context was thus used mainly to inform users directly, such as informative messages, custom feedback, and notifications, and rarely to train predictive or personalization models.
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{sections/charts/mechanismClassificationStacked.pdf}
-    \caption{Distribution of intervention mechanisms stacked by operational classification.}
+    \caption{Delivery mechanisms by delivery paradigm (active, hybrid, passive); $n = 118$ mechanism-paradigm co-occurrences.}
     \label{fig:intervention_mechanisms_stacked}
 \end{figure}
 
-As evident from Figure~\ref{fig:intervention_mechanisms_stacked}, there is notable variation in both overall frequency and operational classification across the six identified intervention mechanisms (comprising 49 total co-occurrences). This classification describes three intervention delivery paradigms: Active interventions require direct, conscious engagement or decision-making from the user or clinician within the application; Passive interventions operate autonomously in the background without requiring user initiative; and Hybrid interventions pair automated background processes with human decision-making or collaborative workflows.
 
-The primary mechanism across the examined corpus is Triggered delivery (n=15 co-occurrences), which relies on predefined rule-based logic to initiate interventions when specific contextual conditions are met. Triggered mechanisms display a distribution across all three operational types, led by Active implementations (n=6), followed by Passive (n=5) and Hybrid (n=4) configurations.
+% PRISMA item 20 -- Q6
+\subsection{Context Delivery Mechanisms (Q6)}
+\label{sec:results:q6}
+% Q5, second part: "which specific mechanisms are employed in intervention delivery?
+As regards delivery mechanisms and paradigms, we identified six delivery mechanisms coded in 117 mechanism--paradigm co-occurrences (\tbc{ambiguity, state the unit: are these studies, interventions, or study--mechanism pairs?}). Each co-occurrence was classified into one of three delivery paradigms: active, requiring direct, conscious engagement or decision-making from the user or clinician; passive, operating autonomously in the background; and hybrid, pairing automated processes with human decision-making or collaborative workflows. 
 
-The second most common intervention mechanisms (n=9 co-occurrences each) are Algorithmic, Dashboard, and Manual interventions. Algorithmic interventions (n=9) are led by Active classifications (n=4), with substantial representation in Hybrid (n=3) and Passive (n=2) modes. Meanwhile, both Dashboard (n=9) and Manual (n=9) interventions exhibit a balanced split across Active (n=3), Hybrid (n=3), and Passive (n=3) classifications.
+Figure~\ref{fig:intervention_mechanisms_stacked} shows the distribution across the three intervention delivery paradigms. Active delivery predominated (69 co-occurrences; 59.0\%), followed by hybrid (33; 28.2\%) and passive delivery (15; 12.8\%). Active delivery was the most frequent paradigm for every mechanism except dashboards and escalated delivery mechanisms, which belonged predominantly to the hybrid paradigm.
 
-Occupying an intermediate tier, Escalated interventions (n=6 co-occurrences) also display an even distribution across Active (n=2), Hybrid (n=2), and Passive (n=2) classifications. Finally, User-driven interventions represent the least frequent mechanism (n=1 co-occurrence) and are exclusively operationalized as Active (100\%), relying entirely on participant initiative to launch modules or request assistance.
+User-driven delivery, in which participants themselves launch modules or request support, was by far the most frequent mechanism (45 co-occurrences; 38.5\%: 34 active, 7 hybrid, 4 passive). It was followed by triggered delivery, in which predefined rules start the intervention when specific contextual conditions are met (24; 20.5\%: 14 active, 6 hybrid, 4 passive), and manual delivery (21; 17.9\%: 11 active, 7 hybrid, 3 passive). Dashboard-based delivery (14; 12.0\%: 5 active, 7 hybrid, 2 passive), algorithmic delivery (9; 7.7\%: 4 active, 4 hybrid, 1 passive), and escalated delivery mechanisms (4; 3.4\%: 1 active, 2 hybrid, 1 passive) were less common configurations.
 
-% ---------------------------------------------------------
-\ subsection {Study Designs and Evaluation Metrics}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{sections/charts/mechanismClassificationStacked2.pdf}
+    \caption{Distribution of intervention mechanisms stacked by operational classification.}
+    \label{fig:intervention_mechanisms_stacked2}
+\end{figure}
+
+
+% PRISMA item 20 -- Q7
+\subsection{Evaluation Designs and Dimensions (Q7)}
+
+Figure~\ref{fig:metrics_designs_heatmap} gives an overview of the co-occurrence matrix mapping study designs against evaluation metrics ($N = 40$ classified studies). Pilot and feasibility studies were the most common design (18 studies; 45.0\%), followed by randomized controlled trials (RCTs; 14; 35.0\%), formative and design studies (5; 12.5\%), and observational or quasi-experimental studies (3; 7.5\%).
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{sections/charts/EMSTDheatmap.pdf}
-    \caption{Distribution of study designs and evaluation metrics.}
+    \caption{Number of studies by study design and evaluation dimension ($N = 42$).}
     \label{fig:metrics_designs_heatmap}
 \end{figure}
 
-Figure~\ref{fig:metrics_designs_heatmap} gives an overview of the co-occurrence matrix mapping study designs against evaluation metrics ($N = 42$ classified studies). Pilot \& Feasibility study designs represent the most prevalent methodology ($n = 20$; 47.6\%), followed by Experimental Randomized Controlled Trials ($n = 14$; 33.3\%), Formative \& Design studies ($n = 5$; 11.9\%), and Observational or Quasi-experimental studies ($n = 3$; 7.1\%).Across evaluation metrics, Acceptability \& Feasibility measures appear in 100.0\% of Pilot \& Feasibility studies ($n = 20$), 100.0\% of Observational studies ($n = 3$), 85.7\% of RCTs ($n = 12$), and 80.0\% of Formative \& Design studies ($n = 4$). In parallel, Clinical Efficacy \& Effectiveness is captured in 100.0\% of RCTs ($n = 14$) and Observational studies ($n = 3$), 80.0\% of Pilot \& Feasibility studies ($n = 16$), and 20.0\% of Formative studies ($n = 1$). Similarly, User Engagement \& Adherence is present in Observational studies ($n = 3$; 100.0\%), RCTs ($n = 12$; 85.7\%), and Pilot studies ($n = 15$; 75.0\%), while accounting for 20.0\% ($n = 1$) in initial Formative \& Design phases.Usability \& UX metrics are predominantly applied in Formative \& Design studies ($n = 4$; 80.0\%) and Pilot \& Feasibility studies ($n = 12$; 60.0\%), whereas their inclusion drops in RCTs ($n = 6$; 42.9\%) and is absent from Observational studies ($n = 0$; 0.0\%).
+Across all 40 studies, acceptability and feasibility were assessed in 37 (92.5\%), clinical efficacy and effectiveness in 33 (82.5\%), user engagement and adherence in 29 (72.5\%), and usability and user experience in 22 (55.0\%). Figure~\ref{fig:metrics_designs_heatmap} shows how these dimensions vary by design.
+
+\todo{For clarity, facts below are enumerated. Narrative to be decided}
+\begin{itemize}
+    \item Acceptability and feasibility were assessed in all pilot and feasibility studies (18/18; 100.0\%) and observational studies (3/3; 100.0\%), in most RCTs (12/14; 85.7\%), and in formative and design studies (4/5; 80.0\%).
+    \item Clinical efficacy and effectiveness were assessed in all RCTs (14/14; 100.0\%) and observational studies (3/3; 100.0\%), in 15 of 18 pilot and feasibility studies (83.3\%), and in 1 of 5 formative and design studies (20.0\%).
+    \item User engagement and adherence were assessed in all observational studies (3/3; 100.0\%), 12 RCTs (12/14; 85.7\%), 13 pilot and feasibility studies (13/18; 72.2\%), and 1 formative and design study (1/5; 20.0\%).
+    \item Usability and user experience were assessed predominantly in formative and design studies (4/5; 80.0\%) and pilot and feasibility studies (12/18; 66.7\%), less often in RCTs (6/14; 42.9\%), and in none of the observational studies (0/3; 0.0\%).
+\end{itemize}
