@@ -19,7 +19,7 @@ The database searches retrieved 16,319 records: 5,368 from Scopus, 5,260 from We
 % PRISMA item 17 (and possible some statements on items 18, 19, 21, 22)
 \subsection{Study Characteristics}
 
-Table~\ref{tab:context_studies} lists the 40 eligible studies included in this review, coded on the six review dimensions.
+Table~\ref{tab:context_studies} lists the 40 eligible studies included in this review, coded on the seven review dimensions.
 
 % Publication years 
 The volume of eligible studies was low until 2019 (one to five studies per year), increased from 2020 onward, and peaked in 2025 (8 studies), with 7 studies each in 2021 and 2024; no eligible study was published in 2022. Because the search was run in February 2026, the count for 2026 covers only part of the year.
@@ -50,7 +50,7 @@ The eligible studies addressed nine mental health conditions and category groupi
 % PRISMA item 20 -- Q2
 \subsection{Technology Platforms (Q2)}
 
-As shown in Figure~\ref{fig:disorders_devices}, four types of technology platforms were identified, with 52 platform assignments across the 40 studies. As expected according to IC2, all 40 studies (100.0\%) used mobile phones, with 30 studies (75.0\%) relying exclusively on them. Overall, tablets were used in six studies (15.0\%), wrist-worn wearables in four studies (10.0\%), and positioning sensors in two studies (5.0\%). The additional devices therefore always complemented, rather than replaced, the smartphone. Among the 10 studies (25.0\%) that combined mobile phones with secondary devices, eight used a single additional device, tablets (5, 12.5\%), wrist-worn wearables (2, 5.0\%), or positioning sensors (1, 2.5\%), while two incorporated multi-device combinations (1, 2.5\% combining tablets with wrist-worn wearables, and 1, 2.5\% combining wrist-worn wearables with positioning sensors).
+As shown in Figure~\ref{fig:disorders_devices}, four types of technology platforms were identified, with 53 platform assignments across the 40 studies. As expected according to IC2, all 40 studies (100.0\%) used mobile phones, with 30 studies (75.0\%) relying exclusively on them. Overall, tablets were used in six studies (15.0\%), wrist-worn wearables in four studies (10.0\%), and positioning sensors in two studies (5.0\%). The additional devices therefore always complemented, rather than replaced, the smartphone. Among the 10 studies (25.0\%) that combined mobile phones with secondary devices, eight used a single additional device, tablets (5, 12.5\%), wrist-worn wearables (2, 5.0\%), or positioning sensors (1, 2.5\%), while two incorporated multi-device combinations (1, 2.5\% combining tablets with wrist-worn wearables, and 1, 2.5\% combining wrist-worn wearables with positioning sensors).
 
 % PRISMA item 20 -- Q3
 \subsection{External Context Types (Q3)}
@@ -83,9 +83,11 @@ Within the social context (79 instances), communication metrics were the largest
 \subsection{Context-Capturing Techniques (Q4)}
 \label{sec:results:q4}
 
-Eleven of the twelve capture techniques defined in the Methods were observed; VR/AR headsets were not used in any study. Across the 205 instances referred to capture techniques (Figure~\ref{fig:bubble_matrix}, \textit{how?} axis), device-side automation (e.g., background usage tracking and metadata) was by far the most frequent technique (78 instances; 38.0\%). It was followed by GPS/geofencing (24; 11.7\%), in-app tracking and telemetry (24; 11.7\%), online usage tracking (18; 8.8\%), self-report (18; 8.8\%), direct contact and prompts (11; 5.4\%), microphone/audio recordings (8; 3.9\%), motion/accelerometer data (8; 3.9\%), Bluetooth sensing (7; 3.4\%), Wi-Fi network logging (5; 2.4\%), and light sensors (4; 2.0\%).
+All eleven capture techniques defined in the Methods were observed. Across the 205 instances referred to capture techniques (Figure~\ref{fig:bubble_matrix}, \textit{how?} axis), device-side automation (e.g., background usage tracking and metadata) was by far the most frequent technique (78 instances; 38.0\%). It was followed by GPS/geofencing (24; 11.7\%), in-app tracking and telemetry (24; 11.7\%), online usage tracking (18; 8.8\%), self-report (18; 8.8\%), direct contact and prompts (11; 5.4\%), microphone/audio recordings (8; 3.9\%), motion/accelerometer data (8; 3.9\%), Bluetooth sensing (7; 3.4\%), Wi-Fi network logging (5; 2.4\%), and light sensors (4; 2.0\%).
 
 %primarily captured via GPS/Geofencing (n = 28) and Bluetooth sensors (n = 11). 
+
+\textbf{Active and passive capture.} Grouping the techniques by the user's involvement, passive techniques that run without user action accounted for 176 instances (85.9\%), whereas active techniques requiring user input accounted for 29 instances (14.1\%).
 
 \tbc{Confirm Active/Passive classification (as similarly used below in Q6) can also be applied to capture techniques; If so, add/define it in the Methods} Grouping the techniques by the user's involvement, passive techniques that run without user action (all except self-report and direct contact and prompts—the two rightmost columns in Figure~\ref{fig:bubble_matrix}) accounted for 176 instances (85.9\%), whereas active techniques requiring user input accounted for 29 instances (14.1\%).
 
@@ -104,13 +106,13 @@ Eleven of the twelve capture techniques defined in the Methods were observed; VR
 \subsection{Use/Purpose of External Context in Interventions (Q5)}
 \label{sec:results:q5}
 
-Of the 174 instances between context and intervention purpose (\textit{What For?} axis in Figure~\ref{fig:bubble_matrix}), user support (e.g., psycho-education, self-management tools) was the most frequent purpose (99 context instances; 56.9\%), followed by adaptive therapy (40; 23.0\%), healthcare provider support (29; 16.7\%), and learning algorithms (6; 3.4\%). %On the technical execution side, Device-side Automation (n = 78; 38.0\% of mechanisms) functions as the primary delivery backbone.
+Of the 174 instances between context and intervention purpose (\textit{What For?} axis in Figure~\ref{fig:bubble_matrix}), user support (e.g., psychoeducation, self-management tools) was the most frequent purpose (99 context instances; 56.9\%), followed by adaptive therapy (40; 23.0\%), healthcare provider support (29; 16.7\%), and learning algorithms (6; 3.4\%). %On the technical execution side, Device-side Automation (n = 78; 38.0\% of mechanisms) functions as the primary delivery backbone.
 Most user-support context instances came from computing and temporal context; in-app telemetry alone was linked to user support 26 times. Context was thus used mainly to inform users directly, such as informative messages, custom feedback, and notifications, and rarely to train predictive or personalization models.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{sections/charts/mechanismClassificationStacked.pdf}
-    \caption{Delivery mechanisms by delivery paradigm (active, hybrid, passive); $n = 118$ mechanism-paradigm co-occurrences.}
+    \caption{Delivery mechanisms by delivery paradigm (active, hybrid, passive); $n = 117$ mechanism-paradigm co-occurrences.}
     \label{fig:intervention_mechanisms_stacked}
 \end{figure}
 
@@ -119,7 +121,7 @@ Most user-support context instances came from computing and temporal context; in
 \subsection{Context Delivery Mechanisms (Q6)}
 \label{sec:results:q6}
 % Q5, second part: "which specific mechanisms are employed in intervention delivery?
-As regards delivery mechanisms and paradigms, we identified six delivery mechanisms coded in 117 mechanism-paradigm co-occurrences (\tbc{ambiguity, state the unit: are these studies, interventions, or study-mechanism pairs?}). Each co-occurrence was classified into one of three delivery paradigms: active, requiring direct, conscious engagement or decision-making from the user or clinician; passive, operating autonomously in the background; and hybrid, pairing automated processes with human decision-making or collaborative workflows. 
+As regards delivery mechanisms and paradigms, we identified six delivery mechanisms represented by 117 coded mechanism-paradigm co-occurrences. Each co-occurrence was classified into one of three delivery paradigms: active, requiring direct, conscious engagement or decision-making from the user or clinician; passive, operating autonomously in the background; and hybrid, pairing automated processes with human decision-making or collaborative workflows.
 
 Figure~\ref{fig:intervention_mechanisms_stacked} shows the distribution across the three intervention delivery paradigms. Active delivery predominated (69 co-occurrences; 59.0\%), followed by hybrid (33; 28.2\%) and passive delivery (15; 12.8\%). Active delivery was the most frequent paradigm for every mechanism except dashboards and escalated delivery mechanisms, which belonged predominantly to the hybrid paradigm.
 
@@ -142,7 +144,7 @@ Figure~\ref{fig:metrics_designs_heatmap} gives an overview of the co-occurrence 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{sections/charts/EMSTDheatmap.pdf}
-    \caption{Number of studies by study design and evaluation dimension ($N = 42$).}
+    \caption{Number of studies by study design and evaluation dimension ($N = 40$).}
     \label{fig:metrics_designs_heatmap}
 \end{figure}
 
